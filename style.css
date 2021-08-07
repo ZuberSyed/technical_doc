@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  box-sizing:border-box;
+  padding:0px;
+  margin:0px;
+}
+h1,header{
+  font-size:2.05rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform:capitalize;
+  margin-bottom:10px;
+}
+header{
+    font-size: 1.8rem;
+    color:#222;
+}
+p{
+  font-size:1.5rem;
+  word-spacing:0.3rem;
+  font-family:serif;
+  line-height:2.4rem;
+  margin-bottom:14px;
+}
+#navbar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:280px;
+  height:100%;
+  border:2px solid black;
+}
+nav ul li a{
+  display:block;
+  text-decoration:none;
+  font-size:1.5rem;
+  padding:12px 5px;
+  color:#000;
+  transition:0.5s;
+}
+nav ul li a:hover{
+  color:#3ee;
+  letter-spacing:0.15rem;
+}
+#main-doc{
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:200px;
+}
+article{
+  padding:10px;
+}
+.h2{
+  text-align:left;
+  margin-bottom:12px;
+}
+ol{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+ol li{
+  font-size:1.5rem;
+  padding-top:10px;
+  line-height:2.1rem;
+  
+}
+.mulLines_code{
+  display:block;
+  font-size:1.2rem;
+  padding:1rem;
+  margin:1.2rem;
+  white-space:pre-line; 
+  word-wrap:normal;
+  word-break:normal; 
+  line-height:1.8rem;
+}
+#Reference ul li{
+  font-size:1.5rem;
+}
+footer{
+  text-align:center;
+  font-size:1.2rem;
+}
+@media(max-width:1000px){
+  #navbar{
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align:center;
+    height:80%;
+    border: none;
+    z-index: 1;
+  }
+  #main-doc{
+    position:relative;
+    top:0px;
+    left:0px;
+    margin-left:0px;
+    margin-top:470px;
+  }
+}
+
+@media(max-width:480px){
+  #navbar{
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align:center;
+    height:80%;
+    border:  none;
+    z-index: 1;
+  }
+  nav ul li a{
+    padding:6px 5px;
+  }
+  #main-doc{
+    position:relative;
+    top:0px;
+    left:0px;
+    padding:10px;
+    margin-left:0px;
+    margin-bottom:480px;
+  }
+  #Reference{
+    padding:10px;
+  }
+}
